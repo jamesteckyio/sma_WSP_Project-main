@@ -1,0 +1,112 @@
+* {
+	font-family: "Times New Roman", "Times", "serif";
+}
+
+body {
+	box-sizing: border-box;
+	margin: 0;
+	height: 100%;
+}
+
+#mainContent {
+	position: relative;
+	height: 100vh;
+	background-image: url(./image/Chem-Lab.jpg);
+	background-size: cover;
+	background-color: #88D1FC;
+}
+#mainContent_black {
+	position: relative;
+	height: 100vh;
+	background-size: cover;
+	background-color: rgba(0, 0, 0, 0.5);
+	background-image: url(./image/Chem-Lab.jpg);
+	background-blend-mode: multiply;
+}
+
+.home_content_without_login {
+	width: 30%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+#page_title {
+	display: flex;
+	justify-content: space-between;
+}
+
+nav {
+	margin: 0 -12px;
+}
+nav li:hover {
+	background-color: rgb(136, 144, 43);
+}
+
+#notice_board {
+	background-color: white;
+}
+
+.notice {
+	position: relative;
+	aspect-ratio: 1/1;
+	width: 90%;
+	/* overflow-y: scroll; */
+	background-color: rgb(220, 220, 87);
+	color: blue;
+	border: 3px;
+	margin: 7% 0;
+}
+
+.material-symbols-outlined {
+	color: black;
+}
+
+[notice-topic] {
+	position: absolute;
+	font-size: 17px;
+	left: 4%;
+}
+
+[notice-del] {
+	cursor: pointer;
+	position: absolute;
+	font-size: 20px;
+	top: -5%;
+	right: -5%;
+	background-color: white;
+	border-radius: 25px;
+}
+
+[notice-edit] {
+	cursor: pointer;
+	position: absolute;
+	font-size: 20px;
+	bottom: -5%;
+	right: -5%;
+	background-color: white;
+	border-radius: 25px;
+}
+
+.material-icons {
+	color: black;
+}
+
+[data-id] {
+	text-align: center;
+	aspect-ratio: 1/1;
+	width: 100%;
+	color: rgb(0, 0, 0);
+	background-color: rgb(220, 220, 87);
+	font-size: 150%;
+	border: 0;
+}
+
+.hide {
+	display: none;
+}
+
+.admin_hide {
+	display: none;
+}
